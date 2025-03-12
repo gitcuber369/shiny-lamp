@@ -1,11 +1,14 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text } from "react-native";
+import React from "react";
+import AppleInvitest from "./components/AppleInvitest";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 const App = () => {
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Apple Invite compoenet</Text>
-    </View>
-  )
-}
-export default App
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <AppleInvitest />
+    </GestureHandlerRootView>
+  );
+};
+
+export default App;
